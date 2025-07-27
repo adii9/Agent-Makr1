@@ -1,0 +1,18 @@
+P[project]
+name = "github-mcp-agent"
+version = "0.1.0"
+description = "An autonomous agent using LangGraph and LangChain with GitHub MCP support"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langgraph>=0.5.0",
+    "langchain-ollama>=0.1.0",
+    "langchain-google-genai>=1.0.0",
+    "jupyter>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "httpx>=0.28.0",
+    "mcp>=0.5.0",
+]

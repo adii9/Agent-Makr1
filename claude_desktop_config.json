@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "github-mcp-agent": {
+      "command": "uv",
+      "args": [
+        "run", 
+        "python", 
+        "/Users/adiimathur/Langchain & Langgraph/github-mcp-agent/mcp_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/adiimathur/Langchain & Langgraph/github-mcp-agent"
+      }
+    }
+  }
+}

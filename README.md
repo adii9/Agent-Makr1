@@ -57,6 +57,15 @@ uv run jupyter lab agent_notebook.ipynb
 uv run python test_setup.py
 ```
 
+#### Option 4: Claude Desktop Integration (MCP)
+```bash
+# Set up Claude Desktop integration
+uv run python setup_claude.py
+
+# Restart Claude Desktop, then use commands like:
+# "Add 15 and 27" or "Get system information"
+```
+
 ## Configuration ⚙️
 
 ### Environment Variables
@@ -96,17 +105,57 @@ GITHUB_REPO=your_username/your_repo
 2. Add it to your `.env` file
 3. Set `DEFAULT_LLM_PROVIDER=gemini`
 
+## Claude Desktop Integration 🤖
+
+This agent can be integrated with Claude Desktop as an MCP (Model Context Protocol) server, allowing Claude to use the agent's tools directly.
+
+### Setup Claude Desktop Integration
+
+1. **Run the setup script**:
+   ```bash
+   uv run python setup_claude.py
+   ```
+
+2. **Restart Claude Desktop** application
+
+3. **Test the integration** with natural language:
+   ```
+   "Add 15 and 27"
+   "Multiply 8 by 9" 
+   "Get system information"
+   "What mathematical operations can you perform?"
+   ```
+
+### Available MCP Tools
+
+When connected to Claude Desktop, the following tools are available:
+- `add_numbers` - Add two integers
+- `multiply_numbers` - Multiply two integers  
+- `get_agent_help` - Show agent capabilities
+- `get_system_info` - Display system and configuration info
+
+### Troubleshooting Claude Desktop
+
+- Ensure Claude Desktop is completely restarted after setup
+- Check that UV and Python are in your system PATH
+- Verify configuration with: `uv run python setup_claude.py --test`
+- View Claude Desktop logs if tools don't appear
+
 ## Project Structure 📁
 
 ```
 github-mcp-agent/
-├── agent_demo.py          # Main Python demo script
-├── agent_notebook.ipynb   # Jupyter notebook with full tutorial
-├── test_setup.py          # Dependency and setup verification
-├── pyproject.toml         # Project configuration and dependencies
-├── .env.example           # Environment variables template
-├── .gitignore            # Git ignore rules
-└── README.md             # This file
+├── agent_demo.py              # Main Python demo script
+├── agent_notebook.ipynb       # Jupyter notebook with full tutorial
+├── test_setup.py              # Dependency and setup verification
+├── mcp_server.py              # MCP server for Claude Desktop integration
+├── setup_claude.py            # Claude Desktop setup script
+├── claude_desktop_config.json # Example Claude Desktop configuration
+├── pyproject.toml             # Project configuration and dependencies
+├── .env.example               # Environment variables template
+├── .gitignore                # Git ignore rules
+├── LICENSE                   # MIT license
+└── README.md                 # This file
 ```
 
 ## Architecture 🏗️

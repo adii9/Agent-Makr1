@@ -1,4 +1,4 @@
-P[project]
+[project]
 name = "github-mcp-agent"
 version = "0.1.0"
 description = "An autonomous agent using LangGraph and LangChain with GitHub MCP support"

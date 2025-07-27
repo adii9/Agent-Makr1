@@ -25,8 +25,8 @@ An autonomous agent built with LangGraph and LangChain that integrates with GitH
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
-   cd github-mcp-agent
+   git clone https://github.com/adii9/Agent-Makr1.git
+   cd Agent-Makr1
    ```
 
 2. **Install dependencies with UV**:

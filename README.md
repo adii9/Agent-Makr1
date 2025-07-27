@@ -80,7 +80,7 @@ DEFAULT_LLM_PROVIDER=ollama  # or "gemini"
 OLLAMA_BASE_URL=http://localhost:11434
 OLLAMA_MODEL=llama2
 
-# Gemini Configuration (for cloud LLM)  
+# Gemini Configuration (for cloud LLM)
 GOOGLE_API_KEY=your_google_api_key_here
 GEMINI_MODEL=gemini-pro
 
@@ -121,7 +121,7 @@ This agent can be integrated with Claude Desktop as an MCP (Model Context Protoc
 3. **Test the integration** with natural language:
    ```
    "Add 15 and 27"
-   "Multiply 8 by 9" 
+   "Multiply 8 by 9"
    "Get system information"
    "What mathematical operations can you perform?"
    ```
@@ -130,7 +130,7 @@ This agent can be integrated with Claude Desktop as an MCP (Model Context Protoc
 
 When connected to Claude Desktop, the following tools are available:
 - `add_numbers` - Add two integers
-- `multiply_numbers` - Multiply two integers  
+- `multiply_numbers` - Multiply two integers
 - `get_agent_help` - Show agent capabilities
 - `get_system_info` - Display system and configuration info
 

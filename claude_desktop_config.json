@@ -3,8 +3,8 @@
     "github-mcp-agent": {
       "command": "uv",
       "args": [
-        "run", 
-        "python", 
+        "run",
+        "python",
         "/Users/adiimathur/Langchain & Langgraph/github-mcp-agent/mcp_server.py"
       ],
       "env": {
